@@ -31,6 +31,9 @@
       float: right;
       margin-right: 230px;
     }
+    placeholder {
+      opacity: .7;
+    }
 
   </style>
 </head>
@@ -38,7 +41,8 @@
 <body class="container">
   <div class="row">
     <div class="twelve columns">
-  <h1 class="text-center banner">A Blockchain Based Voting Application</h1>
+  <h1 class="text-center banner">....................A Blockchain Based Voting Application...................</h1>
+      <p>Get MetaMask Extention for your browser; get some test ether from <a href:"www.faucet.ropsten.be/"> Ropsten Faucet </p>; Connect MetaMask to Ropsten Test Network and <strong>Vote</strong> for your favourite candidate
 </div><br></br>
   </div>
   <div class="row">
@@ -79,7 +83,7 @@
     </table>
     <div id="msg"></div>
   </div>
-  <input type="text" id="candidate"/>
+  <input type="text" id="candidate" name="candidate" placeholder="Enter Name of the Candidate"/>
   <a href="#" onclick="App.voteForCandidate()" class="btn btn-primary">Vote</a>
 </body>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
