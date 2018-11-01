@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting Daap</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <style>
+    img {
+      width: 230px;
+      height: 200px;
+      margin-left: 100px;
+
+    }
+
+    th {
+      background-color: coral;
+      color: whitesmoke;
+    }
+    #Amar {
+      display: inline;
+      float: left;
+      margin-left: 170px;
+    }
+    #Akbar {
+      display: inline;
+      float: left;
+      margin-left: 300px;
+    }
+    #Anthony {
+      display: inline;
+      float: right;
+      margin-right: 230px;
+    }
+
+  </style>
+</head>
+
+<body class="container">
+  <div class="row">
+    <div class="twelve columns">
+  <h1 class="text-center banner">A Blockchain Based Voting Application</h1>
+</div><br></br>
+  </div>
+  <div class="row">
+    <div class="seven columns">
+  <img src="Owl.jpg" alt="Amar"/>
+  <img src="Lion.jpg" alt="Akbar"/>
+  <img src="Anthony.jpg" alt="Anthony"/>
+    <h3 id="Amar">Amar</h3>
+    <h3 id="Akbar">Akbar</h3>
+    <h3 id="Anthony">Anthony</h3><br></br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="five columns">
+      <div id="address"></div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name of the candidate</th>
+              <th>Number of Received Votes</th>
+            </tr>
+          </thead>
+      <tbody>
+        <tr>
+          <td>Amar</td>
+          <td id="candidate-1"></td>
+        </tr>
+        <tr>
+          <td>Akbar</td>
+          <td id="candidate-2"></td>
+        </tr>
+        <tr>
+          <td>Anthony</td>
+          <td id="candidate-3"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msg"></div>
+  </div>
+  <input type="text" id="candidate"/>
+  <a href="#" onclick="App.voteForCandidate()" class="btn btn-primary">Vote</a>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
